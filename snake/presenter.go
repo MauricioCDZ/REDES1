@@ -61,17 +61,17 @@ func renderArena(a *arena, top, bottom, left int) {
 }
 
 func renderScore(left, bottom, s int) {
-	score := fmt.Sprintf("Score: %v", s)
+	score := fmt.Sprintf("Puntuacion: %v", s)
 	tbprint(left, bottom+1, defaultColor, defaultColor, score)
 }
 
 func renderQuitMessage(right, bottom int) {
-	m := "Press ESC to quit"
+	m := "Presionar ESC para salir"
 	tbprint(right-17, bottom+1, defaultColor, defaultColor, m)
 }
 
 func renderTitle(left, top int) {
-	tbprint(left, top-1, defaultColor, defaultColor, "Snake Game")
+	tbprint(left, top-1, defaultColor, defaultColor, "Juego de la serpiente")
 }
 
 func fill(x, y, w, h int, cell termbox.Cell) {
