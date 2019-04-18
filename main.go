@@ -1,6 +1,6 @@
 package main
 
-import "github.com/DyegoCosta/snake-game/snake"
+import "github.com/MauricioCDZ/REDES1/snake"
 
 func main() {
 	snake.NewGame().Start()
